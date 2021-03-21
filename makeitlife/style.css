@@ -1,0 +1,109 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 750px;
+  max-height: 1500px;
+  background-image: url("img/water.jpg");
+  background-size: cover;
+}
+
+body .startline {
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+  padding: 0;
+}
+
+body .startline img {
+  width: 100vw;
+  height: 100px;
+}
+
+body .arena {
+  min-height: 60vh;
+  width: 100%;
+  background-image: url("img/wood.jpg");
+  margin-top: -100px;
+}
+
+body .monster-area {
+  padding-top: 150px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+body .deadline {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 100px;
+}
+
+/* Button Position */
+.button-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  margin-top: 80px;
+}
+
+.button-area .wolf-button-area {
+  margin-right: 50px;
+  z-index: 1;
+}
+
+.button-area .summon-button-area {
+  margin-left: 50px;
+  z-index: 1;
+}
+
+/* Button Styling */
+body .wolf-button-area .btn-wolf {
+  background-image: url("img/wallpaper.jpeg");
+  background-size: cover;
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 10px;
+  color: rgb(255, 255, 255, 0.75);
+  border: 0;
+}
+
+body .wolf-button-area .btn-wolf:hover {
+  background-image: url("img/wallpaper2.jpg");
+  background-size: cover;
+  color: rgba(255, 255, 0, 0.8);
+}
+
+body .arena #summon {
+  background-color: rgba(255, 0, 0, 0.35);
+  color: bisque;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 0;
+}
+
+body .arena #summon:hover {
+  background-color: rgba(255, 0, 0, 0.7);
+  border: 1px solid white;
+}
+
+/* Emotion and Wolf Handling */
+body .arena .wolf {
+  width: 120px;
+  height: 120px;
+  margin: 0 10px;
+}
+
+body .arena .wolfimg {
+  width: 120px;
+  height: 120px;
+}
+body .arena .monster img {
+  width: 70px;
+  height: 70px;
+}
